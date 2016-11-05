@@ -1,0 +1,42 @@
+.clearfix::after {
+	content: '.';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	overflow: hidden;
+	zoom: 1;
+}
+* {
+	font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none!important;
+}
+.buy-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.buy-btn a {
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #fff;
+    display: block;
+}
+.buy-btn a:hover, .buy-btn a:link, .buy-btn a:active, .buy-btn a:visited {
+    color: #FFFFFF!important;
+}
+//去除h5中input['type=number']的上下键
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{
+	-moz-appearance:textfield;
+}

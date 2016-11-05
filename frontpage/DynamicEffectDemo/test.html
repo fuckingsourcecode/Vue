@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            <ul class="inandout">
+                <li class="inandout-one">first</li>
+                <li class="inandout-two">second</li>
+                <li class="inandout-three">three</li>
+                <li class="inandout-four">four</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .inandout-one, .inandout-two, .inandout-three, .inandout-four{
+        list-style: none;
+        opacity: 0;
+    }
+    .inandout-one{
+        animation: oin 1s ease-in-out 0s forwards;
+    }
+    .inandout-two{
+        animation: oin 1s ease-in-out 1s forwards;
+    }
+    .inandout-three{
+        animation: oin 1s ease-in-out 2s forwards;
+    }
+    .inandout-four{
+        animation: oin 1s ease-in-out 3s forwards;
+    }
+    @keyframes oin {
+        0% {
+            opacity: 0.0;
+        }
+        25%{
+            opacity: 0.25;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        75% {
+            opacity: 0.75;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+</body>
+</html>

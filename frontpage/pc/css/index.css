@@ -1,0 +1,134 @@
+
+.content-wrapper{background:#a3a6ad;width:100%;}
+.content-bg{background:url(../images/index_bg02.jpg) #a3a6ad no-repeat top center;}
+.c-bg{background:url(../images/index_bg01.jpg) no-repeat;width:1220px;padding-top:106px;overflow:hidden;}
+.c-left{float:left;}
+.c-right{float:left;margin-top:142px;}
+.c-right .case-t{margin-top:6px;}
+.c-right .case-b{margin-top:35px;}
+
+
+/*banner*/
+.indexBanner{width:100%;position:relative;overflow:hidden;}
+.indexPage{position:absolute;bottom:29px;width:118px;left:46%;}
+.indexPage a{width:19px;height:19px;float:left;display:block;background:url(../images/banner_page_point.png) no-repeat;font-size:18px;font-family:"Microsoft Yahei";text-align:center;color:#fff;margin-left:20px;margin-right:20px;}
+.indexPage a.active{background:url(../images/banner_page_active.png) no-repeat;}
+.indexPage a:hover{text-decoration:none;}
+.indexBox {width:100%;overflow:hidden;}
+.indexBox a{display:none;}
+.bannerWrapper{width:100%;position:relative;overflow:hidden;line-height:0;}
+#btnLeft{width:61px;height:127px;background:url(../images/leftbtn.png) no-repeat 0px;position:absolute;left:53px;z-index:900;top:45%;cursor:pointer;}
+#btnRight{width:61px;height:127px;background:url(../images/rightbtn.png) no-repeat 0px;position:absolute;right:53px;z-index:900;top:45%;cursor:pointer;}
+.indexFeature{width:100%;overflow:hidden;border-bottom:1px solid #e3e3e3;}
+.featureWrapper{width:1058px;margin:0 auto;}
+.featureWrapper .margin20{margin-left:20px;width:352px;}
+.featureWrapper .margin30{width:312px;float:right;}
+.featureWrapper .margin30 h2{border-right:none;}
+.featurePiece{width:352px;float:left;height:220px;overflow:hidden;position:relative;display:block;}
+.featurePiece img{position:absolute;left:0px;top:68px;width:101px;height:101px;}
+.featurePiece h2{padding-left:126px;margin-top:68px;font-size:30px;font-family:"Microsoft Yahei";color:#333;font-weight:normal;line-height:40px;padding-right:10px;border-right:1px solid #e3e3e3;height:100px;}
+.featurePiece h2 p{font-weight:normal;color:#969696;font-size:20px;}
+
+/*具体内容*/
+.indexIntro{width:100%;border-top:1px solid #fff;background:#f5f5f8;}
+.introTitle{height:70px;width:1058px;padding-top:35px;margin:0 auto;}
+.introTitle h2{height:30px;padding-left:12px;font-size:30px;line-height:30px;font-family:"Microsoft Yahei";font-weight:normal;color:#00a7ea;background:url(../images/borderl.jpg) no-repeat 0px 5px;}
+.introCon {background:#fff;width:100%;padding-bottom:91px;}
+.introCon ul{width:1147px;margin:0 auto;overflow:hidden;position:relative;}
+.introCon .introPos{position:absolute;}
+.introCon .introPb1{right:0px;top:153px;width:174px;height:638px;}
+.introCon .introPb2{left:0px;top:589px;width:126px;height:467px;}
+.introCon .introPb3{left:417px;top:1230px;width:515px;height:115px;}
+.introCon .introPb4{left:303px;top:1845px;width:174px;height:638px;}
+.introCon .introPb5{right:40px;bottom:303px;width:309px;height:560px;}
+
+.introCon ul li.introImg1{background:url(../images/product_img01.jpg) 137px 66px no-repeat;padding-left:457px;padding-top:89px;height:406px;}
+.introCon ul li.introImg2{background:url(../images/product_img02.jpg) 700px top no-repeat;padding-left:122px;height:389px;padding-top:39px;}
+.introCon ul li.introImg3{background:url(../images/product_img03.jpg) no-repeat 104px 6px;padding-left:547px;height:457px;}
+.introCon ul li.introImg4{background:url(../images/product_img04.jpg) 654px top no-repeat;padding-left:50px;height:532px;padding-top:39px;}
+.introCon ul li.introImg5{background:url(../images/product_img05.jpg) no-repeat 68px 46px;padding-left:477px;height:571px;}
+.introCon ul li.introImg6{background:url(../images/product_img06.jpg) 730px 70px no-repeat;padding-left:100px;height:424px;padding-top:120px;}
+
+
+.introOne{background:url(../images/p_icon01.jpg) no-repeat left 10px;padding-left:78px;}
+.introTwo{background:url(../images/p_icon02.jpg) no-repeat top right;text-align:right;width:466px;padding-right:76px;}
+.introThree{background:url(../images/p_icon03.jpg) no-repeat left 10px;padding-left:78px;width:466px;}
+.introFour{background:url(../images/p_icon04.jpg) no-repeat top right;text-align:right;width:466px;padding-right:76px;}
+.introFive{background:url(../images/p_icon05.jpg) no-repeat left 58px;padding-left:78px;padding-top:48px;}
+.introSix{background:url(../images/p_icon06.jpg) no-repeat top right;text-align:right;width:466px;padding-right:76px;}
+
+
+.introTwo .introP,.introFour .introP,.introSix .introP{float:right;}
+.introT {color:#00a7ea;font-size:35px;font-weight:normal;}
+.introE {color:#969696;font-size:20px;font-weight:normal;margin-top:10px;margin-bottom:15px;line-height:30px;}
+.introP {width:264px;height:42px;line-height:42px;background:#00a7ea;color:#fff;font-size:22px;text-align:center;}
+
+/*什么是途宝*/
+.outline1{width:100%;height:100%;position:relative;}
+.outline2{width:100%;height:100%;position:relative;line-height:0;}
+.outline3{width:100%;height:100%;position:relative;line-height:0;}
+.outline4{width:100%;height:100%;position:relative;line-height:0;}
+
+.outlineWrapper{width:100%;position:absolute;left:0px;top:0px;z-index:1;}
+#section1 .outlineWrapper .outlineCon{width:1058px;margin:0px auto;padding-top:20%;}
+#section1 .outlineWrapper .outlineCon h2{text-align:left;padding-left:458px;font-size:50px;font-family:"Microsoft Yahei";color:#00a7ea;font-weight:normal;}
+#section1 .outlineWrapper .outlineCon p{text-align:left;padding-left:458px;font-size:20px;font-family:"Microsoft Yahei";color:#969696;font-weight:normal;line-height:35px;margin-top:10px;}
+
+#section2 .outlineWrapper .outlineCon1{text-align:left;width:1058px;margin:0px auto;padding-top:10%;}
+#section2 .outlineWrapper .outlineCon1 h2{font-size:50px;font-family:"Microsoft Yahei";color:#fe9000;font-weight:normal;margin-bottom:10px;line-height:60px;}
+#section2 .outlineWrapper .outlineCon1 h3{font-size:30px;font-family:"Microsoft Yahei";color:#fe9000;font-weight:normal;line-height:40px;}
+#section2 .outlineWrapper .outlineCon1 p{font-size:20px;font-family:"Microsoft Yahei";color:#969696;font-weight:normal;line-height:30px;padding-bottom:20px;opacity:1;}
+
+#section3 .outlineWrapper .outlineCon2{width:1058px;margin:0px auto;padding-top:12%;text-align:center;}
+#section3  .outlineWrapper .outlineCon2 h2{font-size:50px;font-family:"Microsoft Yahei";color:#00a7ea;font-weight:normal;margin-bottom:10px;line-height:60px;}
+#section3 .outlineWrapper .outlineCon2 h3{font-size:30px;font-family:"Microsoft Yahei";color:#969696;font-weight:normal;line-height:40px;}
+#section3  .outlineWrapper .outlineCon2 p{font-size:20px;font-family:"Microsoft Yahei";color:#969696;font-weight:normal;line-height:35px;margin-top:20px;opacity:1;}
+
+#section4 .outlineWrapper .outlineCon3{text-align:left;width:1058px;margin:0px auto;padding-top:10%;}
+#section4 .outlineWrapper .outlineCon3 h2{font-size:50px;font-family:"Microsoft Yahei";color:#fe9000;font-weight:normal;margin-bottom:10px;line-height:60px;}
+#section4 .outlineWrapper .outlineCon3 h3{font-size:30px;font-family:"Microsoft Yahei";color:#969696;font-weight:normal;line-height:40px;}
+#section4 .outlineWrapper .outlineCon3 p{font-size:20px;font-family:"Microsoft Yahei";color:#969696;font-weight:normal;line-height:30px;padding-bottom:20px;opacity:1;margin-top:10px;}
+
+.aboutTobuy{line-height:0;margin:0px;padding:0px;width:100%;height:100%;}
+
+/*购买*/
+.buyContainer{position:relative;background:url(../images/buy_bg01.jpg) top center;height:734px;}
+.buyWrapper{width:100%;position:absolute;z-index:100;top:0px;}
+.buyCon{width:1058px;margin:0px auto;background:url(../images/buy_img01.png) 600px 160px no-repeat;height:644px;padding-top:90px;}
+.buyBi {overflow:hidden;}
+.buyBi ul li{float:left;padding-right:25px;width:370px;padding-top: 60px;}
+.buyBi ul li img{ width:120px;padding-left: 225px;}
+.buyBi ul li p{text-align:center;line-height:30px;height:30px;color:#fff;font-size:16px;padding-left: 205px;}
+.buyInfo {padding-left:110px;overflow:hidden;clear:both;color:#fff;}
+.buyInfo h2{font-size:88px;font-weight:normal;color:#fff;margin-top:40px;}
+.buyInfo p{line-height:30px;font-size:20px;margin-top:5px;margin-left:5px;}
+.buyInfo p span{margin-left:10px;margin-right:10px;}
+.buyInfo h3{font-size:60px;font-weight:normal;color:#fff;margin-top:20px;padding-left:140px;}
+.buyInfo ul {padding-left:70px;margin-top:35px;overflow:hidden;}
+.buyInfo ul li{width:220px;height:56px;line-height:40px;font-size:16px;color:#fff;margin-bottom:22px;text-align:center;}
+.buyInfo ul li.buyTotao{background:url(../images/buy_btn01.png) no-repeat;}
+.buyInfo ul li.buyToapp{background:url(../images/buy_btn02.jpg) no-repeat;}
+
+/*关于我们*/
+.aboutCon{display:none;}
+.indexIntro .show{display:block;}
+.btnone{border-top:none;}
+.aboutTitle{width:100%;height:69px;background:#187fd7;}
+.aboutTitle ul{width:1058px;margin:0 auto;}
+.aboutTitle ul li{width:352px;height:69px;line-height:69px;text-align:center;font-size:24px;float:left;color:#fff;cursor:pointer;}
+.aboutTitle ul li.aboutTitleon{background:#1066ae;}
+.introContent{width:1058px;overflow:hidden;background:url(../images/about_img02.jpg) no-repeat 82px 72px;margin:0 auto;}
+.indexIntro .introbg{background:url(../images/about_img03.jpg) no-repeat 82px 72px;}
+.indexIntro .pb0{padding-bottom:0px;}
+.indexIntro .pt67{padding-top:67px;}
+.introContent p{padding-left:490px;padding-top:82px;padding-bottom:82px;line-height:68px;font-size:18px;}
+.introContent p img{vertical-align:middle;margin-right:15px;margin-left:15px;}
+.introTab{width:554px;margin:0px auto;padding-bottom:40px;}
+.introTab td{padding-bottom:38px;}
+.introTab .introTabl{width:161px;text-align:left;font-size:20px;color:#333;vertical-align:top;}
+.introTab .inputText{height:28px;line-height:28px;border:1px solid #cccccc;width:226px;font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";font-size:14px;outline:none;}
+.introTab .inputText:focus{border:1px solid #3db1fa;}
+.introTab select{width:226px;height:30px;border:1px solid #cccccc;font-family: Trebuchet MS;outline:None;font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";font-size:14px;}
+.introTab textarea{width:388px;height:188px;border:1px solid #ccc;resize:none;outline:none;font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";font-size:14px;}
+.introTab textarea:focus{border:1px solid #3db1fa;}
+.introSub{width:140px;height:43px;line-height:43px;background:url(../images/intro_btn.jpg) no-repeat;color:#fff;font-size:18px;border:none;font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";outline:None;cursor:pointer;margin-left:66px;}

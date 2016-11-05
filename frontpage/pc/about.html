@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" <!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="" />
+
+<meta name="description" content="" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+
+<title>关于途宝</title>
+
+<link href="css/css.css" type="text/css" rel="stylesheet" />
+
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript" src="js/xss.js"></script>
+
+<!--[if lt IE 9]>
+
+<script src="js/html5.js" type="text/javascript"></script>
+
+<![endif]-->
+
+<script language="javascript" type="text/javascript" src="http://pv.sohu.com/cityjson"></script>    
+
+ <script>
+
+ 
+
+ 	var theip;
+
+ 	var thelocation;
+
+ 
+
+	$(function(){
+
+		if(console)
+
+		console.log(returnCitySN);  
+
+		var ip = returnCitySN.cip;
+
+		theip = returnCitySN.cip;
+
+		var pagename="about.html";
+
+		var location = returnCitySN.cname;
+
+		thelocation = returnCitySN.cname;
+
+	
+
+        $.ajax({
+
+             type: "get",
+
+             url: encodeURI(encodeURI("http://139.196.195.148:7070/tb_console/portal/recordAccess?ip="+ip+"&pagename="+pagename+"&location="+location)),
+
+             dataType: "jsonp",
+
+             jsonp: "callback",
+
+             jsonpCallback:"jsonpCallback",
+
+             success: function(json){
+
+				 if(console)
+
+                 console.log(json);
+
+             },
+
+             error: function(){
+
+				 if(console)
+
+                 console.log("jsonp error");
+
+             }
+
+         });
+
+	})
+
+ 
+
+	 var regBox = {
+
+        regEmail : /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+     }
+
+	
+
+	
+
+	$(function(){
+
+		
+
+		$("#submitBtn").click(function(){
+
+			if(!regBox.regEmail.test($("#email").val())){
+
+				alert("请填写正确的email");
+
+				return;
+
+			}	
+
+			var name= filterXSS($("#cname").val());
+
+			var email= filterXSS($("#email").val());
+
+			var tel= filterXSS($("#tel").val());
+
+			var msg = filterXSS($("#msg").val());
+
+			
+
+			
+
+	        $.ajax({
+
+	             type: "get",
+
+	             url: encodeURI(encodeURI("http://139.196.195.148:7070/tb_app_service/portal/recordMsg?ip="+theip+"&location="+thelocation+"&cname="+name+"&email="+email+"&tel="+tel+"&message="+msg)),
+
+	             dataType: "jsonp",
+
+	             jsonp: "callback",
+
+	             jsonpCallback:"jsonpCallback",
+
+	             success: function(json){
+
+	            	 clean();
+
+	            	 alert("谢谢您的建议，我们已记录下来！");
+
+	             },
+
+	             error: function(){
+
+	             	 clean();
+
+	            	 alert("提交失败");
+
+	             }
+
+	         });
+
+		
+
+	})
+
+	})
+
+	
+
+	function clean(){
+
+		$("#cname").val("");
+
+		$("#email").val("");
+
+		$("#tel").val("");
+
+		$("#msg").val("");
+
+	}
+
+	
+
+</script>
+
+</head>
+
+
+
+
+
+<body>
+
+<div id="body">
+
+    <div class="header-wrapperbg"> </div>
+
+    <div class="header-wrapper">
+
+      <div class="header">
+
+        <div class="header-logo"><a href="index.html"></a></div>
+
+        <div class="header-nav">
+
+          <ul>
+
+            <li><a href="index.html" title="首页">首页</a></li>
+
+            <li><a href="tubao.html" title="途宝飞鲸卡">途宝飞鲸卡</a></li>
+
+            <li><a href="buy.html" title="购买">购买</a></li>
+
+            <li><a href="ask.html" title="FAQ">FAQ</a></li>
+
+            <li class="nav-on"><a href="about.html" title="关于">关于</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="aboutBanner">
+
+    	<img src="images/about_img01.jpg" width="100%"/>
+
+    </div>
+
+	<div class="indexIntro btnone">
+
+    	<div class="aboutTitle">
+
+        	<ul>
+
+            	<li id="companyIntro" class="aboutTitleon">公司简介</li>
+
+                <li id="contactUs">联系我们</li>
+
+                <li>意见反馈</li>
+
+            </ul>
+
+        </div>
+
+        <div class="aboutCon show">
+
+            <div class="introCon pb0">
+
+                <div class="introContent">
+
+                    <p>
+
+                        上海途宝网络技术有限公司团队成员来自于大型通讯企业，互联网企业等，公司致力于为用户的海外旅行提供贴心的通讯服务。途宝飞鲸是上海途宝网络技术有限公司利用高科技通讯技术及云计算技术专为解决境外通讯资费高、设备领取归还不方便等问题而研发的产品。在此之前，没有任何一家公司（产品）可以用低廉的价格同时解决：境外上网、原号接听/拨打中国电话无国际漫游费这两大问题！途宝网络现已覆盖亚洲、大洋洲、北美、欧洲等国，致力于提供多样化、高效便捷、实惠安全、个性化的通信服务，切实满足客户境外通讯的各项需求。并依托高科技通讯企业强大的技术优势、各国运营商阵容优势及专业的服务，为出境客户提供最安全、高效的网络及语音服务。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="aboutCon">
+
+            <div class="introCon pb0">
+
+                <div class="introContent introbg">
+
+                    <p>
+
+                        公司地址：<br />
+
+                        上海：上海市浦东新区张江高科技园区碧波路889号中兴通讯大厦（总部）<br />
+
+                        重庆：重庆市渝中区两路口新干线大厦<br />
+
+                        热线电话：4001-0303-98 <br />
+
+                        公司微博二维码：<img src="images/weibo.jpg" alt="" /><br /><br/>
+
+                        公司微信二维码：<img src="images/15cm_tourbag_wx.png" alt="" /><br/>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="aboutCon">
+
+            <div class="introCon pb0 pt67">
+
+                <table class="introTab">
+
+                        <tr>
+
+                            <td class="introTabl">姓名：</td>
+
+                            <td><input id="cname" type="text" class="inputText" /></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="introTabl">联系电话：</td>
+
+                            <td><input id="tel" type="text" class="inputText" /></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="introTabl">Email：</td>
+
+                            <td><input id="email" type="text" class="inputText" /></td>
+
+                        </tr>
+
+                        <!-- 
+
+                        <tr>
+
+                            <td class="introTabl">问题类型：</td>
+
+                            <td><select>
+
+                                         <option selected="selected">请选择</option>
+
+                                         <option>产品咨询</option>
+
+                                       </select></td>
+
+                        </tr>-->
+
+                        <tr>
+
+                            <td class="introTabl">问题描述：</td>
+
+                            <td>
+
+                                <textarea id="msg"></textarea>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="introTabl">&nbsp;</td>
+
+                            <td>
+
+                                <input type="button" value="提   交" class="introSub" id="submitBtn"/>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+    	<div class="footerWapper">
+
+        	<div class="footerCol">
+
+            	<ul>
+
+                	<li><h2>产品</h2></li>
+
+                    <li><a href="tubao.html">途宝飞鲸卡</a></li>
+
+                    <li><a href="buy.html" class="footon">如何购买</a></li>
+
+                    <li><a href="ask.html">FAQ</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footerCol">
+
+            	<ul>
+
+                	<li><h2>关于我们</h2></li>
+
+                    <li><a href="about.html#companyIntro">公司介绍</a></li>
+
+                    <li><a href="about.html#contactUs">联系我们</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footerCol">
+
+            	<ul class="footerCenter">
+
+                	<li><h2>客服热线</h2></li>
+
+                    <li>4001-0303-98</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footerInfo">
+
+                    ©2015 途宝网络 为您服务. <a target="_blank" href="http://www.miitbeian.gov.cn/" hidefocus="true"> </a>
+
+                    <a target="_blank" href="javascript:void(0)" hidefocus="true"> </a>
+
+                    <a target="_blank" href="javascript:void(0)" hidefocus="true">营业执照</a>
+
+                    <a target="_blank" rel="nofollow" href="javascript:void(0)" hidefocus="true"><img src="images/footer-img01.png"/></a>
+
+                    <a target="_blank" rel="nofollow" href="http://210.76.65.188/webrecord/innernet/Welcome.jsp?bano=4404013010531" hidefocus="true"><img src="images/footer-img02.png"/></a>
+
+             
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+
+

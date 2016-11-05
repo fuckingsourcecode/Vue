@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-size:12px;
+	font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";
+	color:#666;
+	font-weight:normal;
+}
+ul,li{
+	list-style-type:none;
+}
+img{
+	border:none;
+}
+
+a{color:#666;}
+a:link, a:visited{
+	text-decoration:none; 
+}
+a:hover {
+	text-decoration:none;;
+	cursor:pointer;
+}
+a:active {
+	text-decoration:none;
+	}
+	
+	
+body,html{background:#fff;height:100%;}
+.wrapper{position:relative;background:#fff;}
+
+/*头部*/
+.header-wrapper{height:80px;width:100%;overflow:hidden;position:fixed;z-index:10000;_position:absolute;}
+.header-wrapperbg{height:80px;width:100%;background:#fff;overflow:hidden;filter:alpha(opacity=75);-moz-opacity:0.75;-khtml-opacity: 0.75;opacity: 0.75;position:fixed;top:0px;z-index:9999;_position:absolute;}
+.header-wrapperb{border:1px solid #e3e3e3;}
+.header{width:1058px;height:80px;margin:0 auto;}
+.header-logo{float:left;}
+.header-logo a{display:block; width:133px;height:80px;}
+.header-logo a img{ width:133px; height:80px;}
+.header-nav{float:right}
+.header-nav ul li{float:left;line-height:80px;font-size:14px;color:#333333;font-family:"Microsoft Yahei";padding-left:20px;padding-right:20px;}
+.header-nav ul li a{color:#333333;}
+.header-nav ul li a:hover{color:#00a7ea;}
+.header-nav ul .nav-on a{color:#00a7ea;}
+
+/*尾部*/
+.footer{width:100%;border-top:1px solid #e3e3e3;}
+.footerWapper{width:1020px;margin:0 auto;padding:30px 0px;overflow:hidden;padding-left:19px;padding-right:19px;}
+.footerCol{width:340px;float:left;font-family:"Microsoft Yahei"}
+.footerCol ul{padding-left:70px;}
+.footerCol ul li{height:39px;line-height:39px;color:#666;}
+.footerCol ul.footerCenter{text-align:center;font-size:14px;padding-left:0px;}
+.footerCol ul li h2{font-size:14px;color:#333;}
+
+.footerCol ul li a{display:block;height:39px;font-size:12px;}
+.footerCol ul li a:hover{color:#00a7ea;}
+.footerCol ul li a.footon{color:#00a7ea;}
+.footerInfo{width:1020px;margin:0 auto;color: #999;
+text-align: right;
+font-size: 12px;
+padding-top: 30px;padding-bottom:40px;overflow:hidden;}
+
+.footerInfo a{margin-left: 10px;
+color: #999;font-family:"Microsoft Yahei"}
+.footerInfo a img{margin-bottom:-5px;}

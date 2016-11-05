@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>途宝微信平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+	<metaname="screen-orientation"content="portrait">
+	<metaname="x5-orientation"content="portrait">
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="node_modules/weui/dist/style/weui.min.css"/>    
+    <script src="./static/js/swiper.min.js"></script>
+    <script src="./static/js/jweixin-1.0.0.js"></script>
+    <script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+    	body {
+    		line-height:1;
+    	}
+    </style>
+</head>
+<body ontouchstart="" onmouseover="">
+    <div id="app"></div>
+	<script src='/static/js/build.js'></script>
+	<script>
+		$(document).ready(function() {
+			$(document).ajaxStart(function() {
+			  	$('.weui_loading_toast').css('display', 'block');
+			});
+			$(document).ajaxComplete(function( event,request, settings ) {
+			  	$('.weui_loading_toast').css('display', 'none');
+			});
+		});
+	</script>
+
+</body>
+</html>

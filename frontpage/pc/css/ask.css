@@ -1,0 +1,21 @@
+/* CSS Document */
+
+/*中部*/
+
+.middleWrapper{widtH:100%;overflow:hidden;}
+.middle{margin:0px auto;overflow:hidden;width:1058px;background:#fff;padding-top:155px;padding-bottom:46px;clear:both;}
+.middle .middle-nav1 h2{font-size:38px;color:#ff5700;background:url(../images/middle-background_14.jpg) no-repeat bottom center;text-align:center;line-height:80px;font-weight:normal;}
+.middle .middle-nav1 h2 span{font-size:25px;color:#666;}
+.middle-nav2{margin-top:35px;overflow:hidden;}
+.middle-nav2 ul{ font-size:16px;color:#666; }
+.middle-nav2 ul h2{ font-size:30px;color:#ff5700;font-weight:normal;background:url(../images/middle-background_18.jpg) repeat-x bottom center;height:60px;line-height:60px;}
+.middle-nav2 ul li p{padding-top:18px;padding-bottom:26px;line-height:25px;}
+
+
+
+
+
+
+
+
+

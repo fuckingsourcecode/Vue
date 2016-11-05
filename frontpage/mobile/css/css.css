@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";
+	color:#666;
+	font-weight:normal;
+}
+ul,li{
+	list-style-type:none;
+}
+img{
+	border:none;
+}
+
+a{color:#666;}
+a:link, a:visited{
+	text-decoration:none; 
+}
+a:hover {
+	text-decoration:none;;
+	cursor:pointer;
+}
+a:active {
+	text-decoration:none;
+	}
+

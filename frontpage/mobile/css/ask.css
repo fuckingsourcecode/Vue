@@ -1,0 +1,27 @@
+/* CSS Document */
+
+/*中部*/
+
+.middleWrapper{widtH:100%;overflow:hidden;}
+.middle{margin:0px auto;overflow:hidden;width:90%;background:#fff;padding-top:55px;padding-bottom:40px; padding-left: 8px;padding-right: 8px; clear:both;}
+.middle .middle-nav1 h2{font-size:30px;color:#ff5700;background:url(../images/ask.img/middle-background_14.jpg) no-repeat bottom center;text-align:center;line-height:40px;font-weight:normal;}
+.middle .middle-nav1 h2 span{font-size:24px;color:#666;}
+.middle-nav2{margin-top:35px;overflow:hidden;}
+.middle-nav2 ul{ font-size:16px;color:#666; }
+.middle-nav2 ul h2{ font-size:18px;color:#ff5700;font-weight:normal;background:url(../images/ask.img/middle-background_18.jpg) repeat-x bottom center;height:60px;line-height:40px;}
+.middle-nav2 ul li p{padding-top:16px;padding-bottom:26px;line-height:25px;}
+
+
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 374px)
+  {
+  	.middle-nav2 ul h2{font-size: 16px;}
+  	.middle-nav2 ul {font-size: 14px;}
+  }
+
+
+
+
+
+

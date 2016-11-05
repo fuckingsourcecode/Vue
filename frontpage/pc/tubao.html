@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="">
+
+<meta name="description" content="">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" > 
+
+<title>途宝是什么</title>
+
+<link href="css/css.css" type="text/css" rel="stylesheet" />
+
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+
+<link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+
+<!--[if lt IE 9]>
+
+<script src="js/html5.js" type="text/javascript"></script>
+
+<![endif]-->
+
+<script type="text/javascript">
+
+		var deleteLog = false;
+
+		$(document).ready(function() {
+
+	    	$('#pagepiling').pagepiling({
+
+	    		menu: '#menu',
+
+	    		anchors: ['page1', 'page2', 'page3','page4'],
+
+			    sectionsColor: ['#f4f3f1', '#1d1e1e', '#f4f3f1','#1d1e1e'],
+
+			    onLeave: function(index, nextIndex, direction){
+
+			    	if(deleteLog){
+
+			    		$('#callbacksDiv').html('');
+
+			    	}
+
+			    	//$('#callbacksDiv').append('<p>onLeave - index:' + index + ' nextIndex:' + nextIndex + ' direction:' + direction + '</p>')
+
+			    },
+
+			    afterRender: function(){
+
+			    	//$('#callbacksDiv').append('<p>afterRender</p>');
+
+			    },
+
+			    afterLoad: function(anchorLink, index){
+
+			    	//$('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
+
+					//if(index == 2){
+
+					//	$('#section2').find('.intro').delay(100).animate({
+
+					//		left: '0%'
+
+					//	}, 1500, 'easeOutExpo', function(){
+
+					//		$('#section2').find('p').first().fadeIn(700, function(){
+
+					//			$('#section2').find('p').last().fadeIn(600);
+
+					//		});
+
+					//	});
+
+					//}
+
+					if(anchorLink == 'page3'){
+
+						$('#section3').find('.intro').delay(100).animate({
+
+						left: '0%'
+
+						}, 1500, 'easeOutExpo');
+
+					}
+
+					deleteLog = true;
+
+			    }
+
+			});
+
+	    });
+
+    </script>
+
+	
+
+<script language="javascript" type="text/javascript" src="http://pv.sohu.com/cityjson"></script>    
+
+ <script>
+
+	$(function(){
+
+		if(console)
+
+		console.log(returnCitySN);  
+
+		var ip = returnCitySN.cip;
+
+		var pagename="tubao.html";
+
+		var location = returnCitySN.cname;
+
+	
+
+	
+
+   jQuery(document).ready(function(){ 
+
+        $.ajax({
+
+             type: "get",
+
+             url: encodeURI(encodeURI("http://120.25.227.130:7070/tb_app_service/portal/recordAccess?ip="+ip+"&pagename="+pagename+"&location="+location)),
+
+             dataType: "jsonp",
+
+             jsonp: "callback",
+
+             jsonpCallback:"jsonpCallback",
+
+             success: function(json){
+
+				 if(console)
+
+                 console.log(json);
+
+             },
+
+             error: function(){
+
+				 if(console)
+
+                 console.log("jsonp error");
+
+             }
+
+         });
+
+     });			
+
+	})
+
+ 
+
+ 
+
+</script>	
+
+	
+
+</head>
+
+
+
+<body>
+
+<div id="body">
+
+    <div class="header-wrapperbg"> </div>
+
+    <div class="header-wrapper">
+
+      <div class="header">
+
+        <div class="header-logo"><a href="index.html"></a></div>
+
+        <div class="header-nav">
+
+            <ul>
+
+                <li><a href="index.html" title="首页">首页</a></li>
+
+                <li class="nav-on"><a href="tubao.html" title="途宝飞鲸卡">途宝飞鲸卡</a></li>
+
+                <li><a href="buy.html" title="购买">购买</a></li>
+
+                <li><a href="ask.html" title="FAQ">FAQ</a></li>
+
+                <li><a href="about.html" title="关于">关于</a></li>
+
+            </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="pagepiling">
+
+      <div class="section" id="section1"> 
+
+         <div class="outline1">
+
+            <img src="images/aboutImg01.jpg" width="100%"/>
+
+            <div class="outlineWrapper">
+
+            	<div class="outlineCon">
+
+                	<h2>什么是途宝飞鲸卡</h2>
+
+                    <p>途宝飞鲸卡是专为<b>海外旅行</b>用户设计的sim卡，<br />
+
+用户只需要拥有一张途宝飞鲸卡，将途宝飞鲸卡<b>贴到</b>用户<b>原有手机卡</b>上，途宝飞鲸卡将<b>自动识别</b>用户所在<b>目的地国家</b>并切换到当地运营商网络，享受便宜高速的移动网络，再也不用担心昂贵的漫游费了</p>
+
+                </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="section" id="section2">
+
+        <div class="outline2">
+
+            <img src="images/aboutImg02.jpg" width="100%"/>
+
+            <div class="outlineWrapper">
+
+            	<div class="outlineCon1">
+
+                	<h2>使用无忧</h2>
+
+                    <h3>自动切换</h3>
+
+                    <p>当用户在国内时，途宝飞鲸卡自动切换为用户国内号码；<br />
+
+当用户在旅行地时，途宝飞鲸卡自动切换为旅行国移动号码</p>
+
+                    <h3>一卡走全球</h3>
+
+                    <p>只要是途宝飞鲸卡覆盖的国家和地区，<br />
+
+用户都可以直接申请当地的移动号码</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="section" id="section3">
+
+        <div class="outline3">
+
+            <img src="images/aboutImg03.jpg" width="100%"/>
+
+            <div class="outlineWrapper">
+
+            	<div class="outlineCon2">
+
+                	<h2>资费灵活</h2>
+
+                    <h3>用户自己需要自主选择</h3>
+
+                    <p>途宝提供旅行国的资费套餐，用户可以自己需要自主选择<br />
+
+途宝提供的目的地通讯套餐，<br />
+
+支持按天/按出行时间段/按月/永久号码等多种方式选择<br />
+
+当用户在旅行期间，可以根据需要重新选购套餐</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="section" id="section4">
+
+        <div class="outline4">
+
+            <img src="images/aboutImg04.jpg" width="100%"/>
+
+            <div class="outlineWrapper">
+
+            	<div class="outlineCon3">
+
+                	<h2>全终端适配</h2>
+
+                    <h3>适用于各种终端</h3>
+
+                    <p>途宝提供标准sim卡，microsim卡(iphone4S等适用)，nanosim卡(iphone5/6适用)，适用于各种终端<br />
+
+途宝飞鲸卡适用于Android/iOS等智能手机, 也适用于非智能手机</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      
+
+      <div class="section" id="section5">
+
+      	 <div class="aboutTobuy">
+
+         	 <a href="javascript:void(0)"><img src="images/about_tobuy.png" width="100%"/></a>
+
+         <!--<a href="buy.html">
+
+         </a>-->
+
+             <div class="footer">
+
+                <div class="footerWapper">
+
+                    <div class="footerCol">
+
+                        <ul>
+
+                            <li><h2>产品</h2></li>
+
+                            <li><a href="tubao.html">途宝飞鲸卡</a></li>
+
+                            <li><a href="buy.html" class="footon">如何购买</a></li>
+
+                            <li><a href="ask.html">FAQ</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footerCol">
+
+                        <ul>
+
+                            <li><h2>关于我们</h2></li>
+
+                            <li><a href="about.html#companyIntro">公司介绍</a></li>
+
+                            <li><a href="about.html#contactUs">联系我们</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footerCol">
+
+                        <ul class="footerCenter">
+
+                            <li><h2>客服热线</h2></li>
+
+                            <li>4001-0303-98</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="footerInfo">
+
+                            ©2015 途宝网络 为您服务. <a target="_blank" href="http://www.miitbeian.gov.cn/" hidefocus="true"> </a>
+
+                            <a target="_blank" href="javascript:void(0)" hidefocus="true"> </a>
+
+                            <a target="_blank" href="javascript:void(0)" hidefocus="true">营业执照</a>
+
+                            <a target="_blank" rel="nofollow" href="javascript:void(0)" hidefocus="true"><img src="images/footer-img01.png"/></a>
+
+                            <a target="_blank" rel="nofollow" href="http://210.76.65.188/webrecord/innernet/Welcome.jsp?bano=4404013010531" hidefocus="true"><img src="images/footer-img02.png"/></a>
+
+                     
+
+                    </div>
+
+             </div>
+
+         </div>
+
+
+
+      </div>
+
+    </div>
+
+    
+
+</div>
+
+</body>
+
+</html>
+
